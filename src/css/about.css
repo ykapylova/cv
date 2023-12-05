@@ -1,0 +1,63 @@
+.about {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .about {
+    align-items: center;
+    min-height: 70vh;
+  }
+}
+@media screen and (max-width: 768px) {
+  .about {
+    flex-direction: column-reverse;
+  }
+}
+.about h2 {
+  font-size: 36px;
+}
+@media screen and (max-width: 768px) {
+  .about h2 {
+    display: none;
+  }
+}
+.about .image {
+  height: 90vh;
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .about .image {
+    height: auto;
+    width: 50%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .about .image {
+    height: auto;
+    width: 100%;
+  }
+}
+.about .image img {
+  height: 100%;
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .about .image img {
+    height: auto;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .about .image img {
+    height: auto;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .about .content {
+    height: auto;
+    width: 50%;
+  }
+}
+
+/*# sourceMappingURL=about.css.map */

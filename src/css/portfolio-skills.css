@@ -1,0 +1,125 @@
+.App .portfolio {
+  width: 100%;
+  display: flex;
+  gap: 50px;
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .App .portfolio {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 768px) {
+  .App .portfolio {
+    flex-direction: column;
+  }
+}
+.App .portfolio h2 {
+  font-size: 36px;
+  margin-top: 0;
+}
+.App .portfolio .projects {
+  width: 800px;
+  height: 560px;
+  display: grid;
+  grid-template-columns: repeat(3, 266.6666666667px);
+  grid-template-rows: 186.6666666667px 62.2222222222px 186.6666666667px 124.4444444444px;
+  grid-template-areas: "project1 project2 project3" "project4 project5 project3" "project4 project5 project6" "project4 project5 project7";
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .App .portfolio .projects {
+    width: 600px;
+    height: 360px;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: 120px 40px 120px 80px;
+    grid-template-areas: "project1 project2 project3" "project4 project5 project3" "project4 project5 project6" "project4 project5 project7";
+  }
+}
+@media screen and (max-width: 768px) {
+  .App .portfolio .projects {
+    width: 100%;
+    min-width: 300px;
+    height: auto;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(7, auto);
+    grid-template-areas: "project1" "project2" "project3" "project4" "project5" "project6" "project7";
+  }
+}
+.App .portfolio .projects > a {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  color: black;
+}
+.App .portfolio .projects > a .bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(100% - 30px);
+  padding: 20px;
+  height: calc(100% - 30px);
+  background-color: white;
+  z-index: 1000;
+  opacity: 0.6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: all 0.3s;
+}
+.App .portfolio .projects > a .bg .text {
+  position: absolute;
+  width: 186.6666666667px;
+  opacity: 0;
+  font-size: 13px;
+  transition: all 0.3s;
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .App .portfolio .projects > a .bg .text {
+    font-size: 9px;
+    width: calc(100% - 30px);
+  }
+}
+.App .portfolio .projects > a .bg .text h3 {
+  margin-top: 0;
+}
+.App .portfolio .projects > a .bg:hover {
+  width: calc(100% - 50px - 30px);
+  height: calc(100% - 50px - 30px);
+  opacity: 1;
+}
+.App .portfolio .projects > a .bg:hover .text {
+  opacity: 1;
+}
+.App .portfolio .projects > a img {
+  width: 100%;
+  min-height: 100%;
+  filter: grayscale(1);
+}
+.App .portfolio .projects > a.project1 {
+  grid-area: project1;
+}
+.App .portfolio .projects > a.project2 {
+  grid-area: project2;
+}
+.App .portfolio .projects > a.project3 {
+  grid-area: project3;
+}
+.App .portfolio .projects > a.project4 {
+  grid-area: project4;
+}
+.App .portfolio .projects > a.project5 {
+  grid-area: project5;
+}
+.App .portfolio .projects > a.project5 img {
+  width: 102%;
+  margin-left: -5px;
+}
+.App .portfolio .projects > a.project6 {
+  grid-area: project6;
+}
+.App .portfolio .projects > a.project7 {
+  grid-area: project7;
+}
+
+/*# sourceMappingURL=portfolio-skills.css.map */

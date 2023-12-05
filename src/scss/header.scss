@@ -1,0 +1,167 @@
+header.main {
+  height: 10vh;
+  padding: 0 10vw;
+  width: calc(100% - 20vw);
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: white;
+  z-index: 10000;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+
+  .logo {
+    font-family: "La Belle Aurore", Arial, "Helvetica Neue", Helvetica,
+      sans-serif;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    span {
+      height: 110%;
+    }
+  }
+
+  nav {
+    display: flex;
+    gap: 45px;
+    font-size: 16px;
+    align-items: center;
+
+    a {
+      color: black;
+      text-decoration: none;
+
+      &:hover {
+        color: rgb(127, 127, 127);
+      }
+    }
+  }
+}
+
+header.burger {
+  height: 10vh;
+  padding: 0 10vw;
+  width: calc(100% - 20vw);
+  // display: flex;
+  // justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: white;
+  z-index: 10000;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+
+  display: none;
+
+  @media screen and (max-width: 768px) {
+    display: block;
+  }
+
+  #menu {
+    z-index: 2;
+
+    #menu-bar {
+      width: 45px;
+      height: 40px;
+      margin: 30px 0 20px 20px;
+      cursor: pointer;
+      z-index: 3;
+
+      .bar {
+        height: 5px;
+        width: 100%;
+        background-color: #c79bff;
+        display: block;
+        border-radius: 5px;
+        transition: 0.3s ease;
+      }
+
+      #bar1 {
+        transform: translateY(-4px);
+      }
+
+      #bar3 {
+        transform: translateY(4px);
+      }
+    
+
+    &.change .bar {
+      background-color: white;
+
+      #bar1 {
+        transform: translateY(4px) rotateZ(-45deg);
+      }
+
+      #bar2 {
+        opacity: 0;
+      }
+
+      #bar3 {
+        transform: translateY(-6px) rotateZ(45deg);
+      }
+    }}
+  }
+
+  .nav {
+    transition: 0.3s ease;
+    display: none;
+
+    ul {
+      padding: 0 22px;
+
+      li {
+        list-style: none;
+        padding: 12px 0;
+
+        a {
+          color: white;
+          font-size: 20px;
+          text-decoration: none;
+
+          &:hover {
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+
+  #menu-bar,
+  .nav {
+    &.change {
+      display: block;
+    }
+  }
+
+  .menu-bg,
+  #menu {
+    top: 0;
+    left: 0;
+    position: absolute;
+  }
+
+  .menu-bg {
+    z-index: 1;
+    width: 0;
+    height: 0;
+    margin: 30px 0 20px 20px;
+    background: radial-gradient(circle, #c79bff, #c79bff);
+    border-radius: 50%;
+    transition: 0.3s ease;
+  }
+
+  
+
+  .change-bg {
+    width: 620px;
+    height: 560px;
+    transform: translate(-60%, -30%);
+  }
+}
