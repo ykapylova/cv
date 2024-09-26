@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "./static/css/main.4a76225e.css",
+    "main.css": "./static/css/main.7d94eda7.css",
     "main.js": "./static/js/main.1c8c087b.js",
     "static/media/Gilroy-Light.otf": "./static/media/Gilroy-Light.cc7ab55d27205bd64001.otf",
     "index.html": "./index.html",
-    "main.4a76225e.css.map": "./static/css/main.4a76225e.css.map",
+    "main.7d94eda7.css.map": "./static/css/main.7d94eda7.css.map",
     "main.1c8c087b.js.map": "./static/js/main.1c8c087b.js.map"
   },
   "entrypoints": [
-    "static/css/main.4a76225e.css",
+    "static/css/main.7d94eda7.css",
     "static/js/main.1c8c087b.js"
   ]
 }
