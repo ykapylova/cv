@@ -1,0 +1,49 @@
+.App .hobbies {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 30px;
+  padding-bottom: 30px;
+
+  @media screen and (max-width: 768px) {
+    min-height: 70vh;
+  }
+
+  h2 {
+    font-size: 36px;
+  }
+
+  .items {
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .column {
+      display: flex;
+      flex-direction: column;
+      width: calc(100% / 4);
+      gap: 20px;
+
+      @media screen and (max-width: 768px) {
+        width: 70%;
+      }
+
+      .hobbie {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

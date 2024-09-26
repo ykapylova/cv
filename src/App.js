@@ -7,12 +7,14 @@ import "./css/home.css";
 import "./css/about.css";
 import "./css/career.css";
 import "./css/portfolio-skills.css";
+import "./css/hobbies.css";
 import "./css/footer.css";
 import { About } from "./components/about";
 import { Career } from "./components/career";
 import { Portfolio } from "./components/portfolio-skills";
 import { Footer } from "./components/footer";
 import { Burger } from "./components/burger";
+import { Hobbies } from "./components/hobbies";
 
 function App() {
   return (
@@ -24,6 +26,7 @@ function App() {
         <About />
         <Career />
         <Portfolio />
+        <Hobbies />
         <Footer />
       </div>
     </BrowserRouter>

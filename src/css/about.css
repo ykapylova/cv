@@ -3,61 +3,57 @@
   display: flex;
   justify-content: space-between;
   gap: 50px;
-}
-@media screen and (min-width: 768px) and (max-width: 1200px) {
-  .about {
+
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
     align-items: center;
     min-height: 70vh;
   }
-}
-@media screen and (max-width: 768px) {
-  .about {
+
+  @media screen and (max-width: 768px) {
     flex-direction: column-reverse;
   }
-}
-.about h2 {
-  font-size: 36px;
-}
-@media screen and (max-width: 768px) {
-  .about h2 {
-    display: none;
-  }
-}
-.about .image {
-  height: 90vh;
-}
-@media screen and (min-width: 768px) and (max-width: 1200px) {
-  .about .image {
-    height: auto;
-    width: 50%;
-  }
-}
-@media screen and (max-width: 768px) {
-  .about .image {
-    height: auto;
-    width: 100%;
-  }
-}
-.about .image img {
-  height: 100%;
-}
-@media screen and (min-width: 768px) and (max-width: 1200px) {
-  .about .image img {
-    height: auto;
-    width: 100%;
-  }
-}
-@media screen and (max-width: 768px) {
-  .about .image img {
-    height: auto;
-    width: 100%;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1200px) {
-  .about .content {
-    height: auto;
-    width: 50%;
-  }
-}
 
-/*# sourceMappingURL=about.css.map */
+  h2 {
+    font-size: 36px; 
+    
+    @media screen and (max-width: 768px) {
+     display: none;
+    }
+  }
+
+  .image {
+    height: 90vh;
+
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
+      height: auto;
+      width: 50%;
+    }
+
+    @media screen and (max-width: 768px) {
+      height: auto;
+      width: 100%;
+    }
+
+    img {
+      height: 100%;
+
+      @media screen and (min-width: 768px) and (max-width: 1200px) {
+        height: auto;
+        width: 100%;
+      }
+
+      @media screen and (max-width: 768px) {
+        height: auto;
+        width: 100%
+      }
+      
+    }
+  }
+
+  .content {
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
+      height: auto;
+      width: 50%;
+    }
+  }
+}
