@@ -17,15 +17,15 @@ body {
 
 h2 {
   display: inline-block;
-  border-bottom: #c79bff solid 3px;
+  /* border-bottom: black solid 3px; */
   padding-bottom: 5px;
 }
 
-h2::after {
-  border-bottom: #c79bff solid 3px;
+/* h2::after {
+  border-bottom: black solid 3px;
   height: 5px;
   width: 100%;
-}
+} */
 
 .App {
   display: flex;
